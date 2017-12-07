@@ -16,13 +16,51 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+img:nth-child(4),
+img:nth-child(2) {
+  display: none;
+}
+
 @media only screen and (min-width: 25em) {
 
   img {
-    display: inline-block;
-    text-align: center;
-    display: block;
-    width: 100%;
-
+    width: 47%;
   }
+
+  img:nth-child(4),
+  img:nth-child(2) {
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img {
+    width: 32.8%;
+  }
+
+  img:first-child {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    width: 24.7%;
+    display: inline-block;
+  }
+
+  img:first-child {
+    display: inline-block;
+  }
+
 }
